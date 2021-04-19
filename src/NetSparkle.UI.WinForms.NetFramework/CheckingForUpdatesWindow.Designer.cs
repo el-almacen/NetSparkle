@@ -38,10 +38,11 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(137, 109);
+            this.progressBar1.Location = new System.Drawing.Point(68, 57);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar1.MarqueeAnimationSpeed = 5;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(595, 41);
+            this.progressBar1.Size = new System.Drawing.Size(298, 21);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 0;
             // 
@@ -49,20 +50,22 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             this.CheckingForUpdates.AutoSize = true;
             this.CheckingForUpdates.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckingForUpdates.Location = new System.Drawing.Point(207, 33);
+            this.CheckingForUpdates.Location = new System.Drawing.Point(82, 17);
+            this.CheckingForUpdates.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CheckingForUpdates.Name = "CheckingForUpdates";
-            this.CheckingForUpdates.Size = new System.Drawing.Size(431, 42);
+            this.CheckingForUpdates.Size = new System.Drawing.Size(275, 24);
             this.CheckingForUpdates.TabIndex = 1;
-            this.CheckingForUpdates.Text = "Checking for Updates...";
+            this.CheckingForUpdates.Text = "Revisando actualizaciones...";
             // 
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(343, 180);
+            this.button1.Location = new System.Drawing.Point(172, 94);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 48);
+            this.button1.Size = new System.Drawing.Size(76, 25);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Cancel";
+            this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Cancel_Click);
             // 
@@ -70,8 +73,7 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             this.iconImage.Image = ((System.Drawing.Image)(resources.GetObject("iconImage.Image")));
             this.iconImage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.iconImage.Location = new System.Drawing.Point(15, 32);
-            this.iconImage.Margin = new System.Windows.Forms.Padding(6);
+            this.iconImage.Location = new System.Drawing.Point(8, 17);
             this.iconImage.Name = "iconImage";
             this.iconImage.Size = new System.Drawing.Size(48, 48);
             this.iconImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -80,19 +82,20 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             // CheckingForUpdatesWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 244);
+            this.ClientSize = new System.Drawing.Size(416, 127);
             this.Controls.Add(this.iconImage);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CheckingForUpdates);
             this.Controls.Add(this.progressBar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CheckingForUpdatesWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Software Update";
+            this.Text = "Actualización de Software";
             ((System.ComponentModel.ISupportInitialize)(this.iconImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

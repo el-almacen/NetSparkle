@@ -139,7 +139,7 @@
     <value>8</value>
   </data>
   <data name="lblHeader.Text" xml:space="preserve">
-    <value>Downloading APP</value>
+    <value>Descargando APP</value>
   </data>
   <data name="&gt;&gt;lblHeader.Name" xml:space="preserve">
     <value>lblHeader</value>
@@ -193,7 +193,7 @@
     <value>10</value>
   </data>
   <data name="btnInstallAndReLaunch.Text" xml:space="preserve">
-    <value>Install and Relaunch</value>
+    <value>Instalar y Relanzar</value>
   </data>
   <data name="&gt;&gt;btnInstallAndReLaunch.Name" xml:space="preserve">
     <value>btnInstallAndReLaunch</value>
@@ -286,7 +286,7 @@
     <value>13</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
     <value>buttonCancel</value>
@@ -497,14 +497,11 @@
         /////wAA
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Software Download</value>
+    <value>Descarga de Software</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DownloadProgressWindow</value>

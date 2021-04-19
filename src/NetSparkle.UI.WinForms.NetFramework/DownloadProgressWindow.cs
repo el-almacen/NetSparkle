@@ -28,7 +28,7 @@ namespace NetSparkleUpdater.UI.WinForms
         {
             set
             {
-                btnInstallAndReLaunch.Text = value ? "Install and Relaunch" : "Install";
+                btnInstallAndReLaunch.Text = value ? "Instalar y Relanzar" : "Instalar";
             }
         }
 
@@ -46,7 +46,7 @@ namespace NetSparkleUpdater.UI.WinForms
 
             // init ui
             btnInstallAndReLaunch.Visible = false;
-            btnInstallAndReLaunch.Text = "Install and Relaunch";
+            btnInstallAndReLaunch.Text = "Instalar y Relanzar";
             lblHeader.Text = lblHeader.Text.Replace("APP", item.AppName + " " + item.Version);
             downloadProgressLbl.Text = "";
             progressDownload.Maximum = 100;
@@ -120,7 +120,7 @@ namespace NetSparkleUpdater.UI.WinForms
                 downloadProgressLbl.Visible = true;
                 progressDownload.Visible = false;
                 btnInstallAndReLaunch.Visible = false;
-                buttonCancel.Text = "Close";
+                buttonCancel.Text = "Cerrar";
                 downloadProgressLbl.Text = errorMessage;
             }
             return true;

@@ -41,10 +41,10 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             this.iconImage.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.iconImage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.iconImage.Location = new System.Drawing.Point(16, 12);
-            this.iconImage.Margin = new System.Windows.Forms.Padding(6, 12, 6, 6);
+            this.iconImage.Location = new System.Drawing.Point(3, 6);
+            this.iconImage.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.iconImage.Name = "iconImage";
-            this.iconImage.Size = new System.Drawing.Size(48, 48);
+            this.iconImage.Size = new System.Drawing.Size(34, 48);
             this.iconImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.iconImage.TabIndex = 9;
             this.iconImage.TabStop = false;
@@ -53,22 +53,23 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(83, 0);
-            this.lblMessage.MaximumSize = new System.Drawing.Size(630, 0);
+            this.lblMessage.Location = new System.Drawing.Point(42, 0);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMessage.MaximumSize = new System.Drawing.Size(315, 0);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(623, 126);
+            this.lblMessage.Size = new System.Drawing.Size(313, 72);
             this.lblMessage.TabIndex = 8;
-            this.lblMessage.Text = "Sorry, either our server is having a problem, or your internet connection is inva" +
-    "lid.";
+            this.lblMessage.Text = "Lo sentimos, puede que nuestro servidor o tu conexión a internet tenga problemas " +
+    "para actualizar.";
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
-            this.button1.Location = new System.Drawing.Point(298, 146);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
+            this.button1.Location = new System.Drawing.Point(149, 82);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 10, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 46);
+            this.button1.Size = new System.Drawing.Size(64, 24);
             this.button1.TabIndex = 10;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -78,32 +79,34 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.iconImage, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblMessage, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(725, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(362, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(725, 195);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(362, 108);
             this.tableLayoutPanel1.TabIndex = 11;
             // 
             // MessageNotificationWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(751, 229);
+            this.ClientSize = new System.Drawing.Size(376, 119);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MessageNotificationWindow";
-            this.Text = "Message";
+            this.Text = "Mensaje";
             ((System.ComponentModel.ISupportInitialize)(this.iconImage)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

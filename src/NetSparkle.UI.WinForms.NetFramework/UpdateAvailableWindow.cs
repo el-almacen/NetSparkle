@@ -65,13 +65,13 @@ namespace NetSparkleUpdater.UI.WinForms
             }
             catch (Exception ex)
             {
-                _sparkle.LogWriter.PrintMessage("Error in browser init: {0}", ex.Message);
+                _sparkle.LogWriter.PrintMessage("Error al inicializar el explorador: {0}", ex.Message);
             }
 
             AppCastItem item = items.FirstOrDefault();
 
-            var downloadInstallText = isUpdateAlreadyDownloaded ? "install" : "download";
-            lblHeader.Text = lblHeader.Text.Replace("APP", item != null ? item.AppName : "the application");
+            var downloadInstallText = isUpdateAlreadyDownloaded ? "instalarla" : "descargarla";
+            lblHeader.Text = lblHeader.Text.Replace("APP", item != null ? item.AppName : "la aplicación");
             if (item != null)
             {
                 var versionString = "";
@@ -86,13 +86,13 @@ namespace NetSparkleUpdater.UI.WinForms
                 {
                     versionString = "?";
                 }
-                lblInfoText.Text = string.Format("{0} {3} is now available (you have {1}). Would you like to {2} it now?", item.AppName, versionString, 
+                lblInfoText.Text = string.Format("{0} {3} está disponible (tienes la versión {1}). ¿Te gustaría {2} ahora?", item.AppName, versionString, 
                     downloadInstallText, item.Version);
             }
             else
             {
                 // TODO: string translations (even though I guess this window should never be called with 0 app cast items...)
-                lblInfoText.Text = string.Format("Would you like to {0} it now?", downloadInstallText);
+                lblInfoText.Text = string.Format("¿Te gustaría {0} ahora?", downloadInstallText);
             }
 
             bool isUserMissingCriticalUpdate = items.Any(x => x.IsCriticalUpdate);
