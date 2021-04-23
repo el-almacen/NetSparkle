@@ -39,7 +39,7 @@ namespace NetSparkleUpdater.UI.WinForms
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(68, 57);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar1.MarqueeAnimationSpeed = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(298, 21);
@@ -61,11 +61,11 @@ namespace NetSparkleUpdater.UI.WinForms
             // 
             this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(172, 94);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 25);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Cancelar";
+            this.button1.Text = "Saltar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Cancel_Click);
             // 
@@ -90,7 +90,7 @@ namespace NetSparkleUpdater.UI.WinForms
             this.Controls.Add(this.CheckingForUpdates);
             this.Controls.Add(this.progressBar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CheckingForUpdatesWindow";

@@ -55,8 +55,7 @@ namespace NetSparkleUpdater.UI.WinForms
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(623, 126);
             this.lblMessage.TabIndex = 8;
-            this.lblMessage.Text = "Sorry, either our server is having a problem, or your internet connection is inva" +
-    "lid.";
+            this.lblMessage.Text = "Lo sentimos, puede que nuestro servidor o tu conexión a internet tenga problemas";
             // 
             // button1
             // 
